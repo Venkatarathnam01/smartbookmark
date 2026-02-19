@@ -43,7 +43,7 @@ export default function Home() {
       <ul className="list">
         {bookmarks.map((b, i) => (
           <li key={i}>
-            <a href={b.url} target="_blank">
+            <a href={b.url} target="_blank" rel="noopener noreferrer">
               {b.title}
             </a>
             <button onClick={() => removeBookmark(i)}>Delete</button>
